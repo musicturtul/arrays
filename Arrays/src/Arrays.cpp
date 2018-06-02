@@ -49,5 +49,13 @@ int main() {
 	 for (int i = 0; i < 3; i++) {
 		 cout << "The element at index " << i << " is: " << texts[i] << endl;
 	 }
+
+//	I had to specify the size of the array or it would cause a fatal error
+	 int twelveTimesTable[13] = {};
+	 for (int i = 0; i <= 12; i++) {
+		 twelveTimesTable[i] = i * 12;
+		 cout << "The first number is: " << twelveTimesTable[i] << endl;
+	 }
+
 	 return 0;
 }
