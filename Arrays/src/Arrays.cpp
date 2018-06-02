@@ -7,6 +7,7 @@
 //============================================================================
 
 #include <iostream>
+#include <array>
 using namespace std;
 
 int main() {
@@ -21,6 +22,9 @@ int main() {
 	cout << values[0] << endl;
 	cout << values[1] << endl;
 	cout << values[2] << endl;
+
+// Make sure not to try to access bits of the array that are not indexed
+// cout << "Bad idea: " << values[3] << endl;
 
 	double numbers[4] = {3.4, 2.1, 5.2, 7.6};
 
@@ -39,5 +43,11 @@ int main() {
 	 for (int i = 0; i < 8; i++) {
 		 cout << "Element at index " << i << ": " << numberArray[i] << endl;
 	 }
-	return 0;
+
+//you can also make arrays of any type
+	 string texts[] = {"apples", "bananas", "oranges"};
+	 for (int i = 0; i < 3; i++) {
+		 cout << "The element at index " << i << " is: " << texts[i] << endl;
+	 }
+	 return 0;
 }
